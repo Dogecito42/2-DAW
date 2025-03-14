@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/*Fuente Script:*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+/*Fuente Host Grotesk*/
+
+
+/*Sección para el header*/
+
+.header {
+  /*Color y disposición del header, con el espacio ante el resto de página*/
+  background-image: linear-gradient(#526D82, #DDE6ED);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.buttons-container {
+  /*Permite disponer a la izquierda el texto del header y así seperarlo de los botones derechos*/
+  margin-left: auto;
+}
+
+.header img {
+  /*Tamaño de la imagen logo*/
+  height: 64px;
+  width: 64px;
+  margin-right: 20px;
+  object-position: center;
+}
+
+.header img:hover {
+  transform: scale(1.25);
+
+}
+#Idiomas{
+  width: 32px;
+  height: 32px;
+}
+.header p,
+.header a {
+  /*Fuente base de las secciones de la página*/
+  color: #dad9d9;
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+
+.header p:hover,
+.header a:hover {
+  font-weight: bold;
+  color: #000;
+}
+
+.header button {
+  /*Botones del header (registro e inicio)*/
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px 15px;
+}
+
+#login {
+  /*Botón de inicio de sesión*/
+  background-color: #27374D;
+  color: #dddada;
+  border: #27374D;
+  transition: transform 0.5s ease, margin 0.5s ease;
+
+}
+
+#login:hover {
+  transform: scale(1.25);
+
+}
+
+#register {
+  /*Botón de registro*/
+  background-color: #9DB2BF;
+  border: #9DB2BF;
+  transition: transform 0.5s ease, margin 0.5s ease;
+
+}
+
+#register:hover {
+  transform: scale(1.25);
+
+}
+
+/*Contenido del footer de la página*/
+
+.footer {
+  /*Forma color y disposición del footer*/
+  background-image: linear-gradient(#DDE6ED, #526D82);
+  padding: 10px;
+  font-family: "Host Grotesk";
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer a {
+  /*Color de los enlaces del footer*/
+  text-decoration: none;
+  color: #27374D;
+  transition: 0.5s;
+}
+
+.footer a:hover {
+  color: #000;
+}
+
+.footer ul li {
+  /*Disposición de los enlaces de redes sociales*/
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+#fila1 {
+  /*Forma de fuente de la primera línea del footer*/
+  color: #526D82;
+  font-size: 20px;
+}
+
+#fila1 img:hover {
+  transform: scale(1.25);
+}
+
+#fila2 {
+  /*Forma de fuente de la segunda línea del footer*/
+  color: #000;
+  font-size: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+#fila2 p {
+  text-align: center;
+}
+
+/*Forma de disposición del body de la  página (cuerpo de página)*/
+
+.body {
+  background-color: #DDE6ED;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Host Grotesk";
+}
+
+#Cont2 {
+  /*Contenedor que da forma de página al contenido body interior*/
+  max-width: 60%;
+  text-align: justify;
+  padding: 20fpx;
+}
+
+p,
+h1,
+h3 {
+  /*Disposición de las etiquetas de texto de la página*/
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  line-height: 28px;
+}
+
+h1 {
+  /*Tamaño y fuente del texto h1*/
+  font-family: 'Dancing Script', cursive;
+  font-size: 48px;
+}
+
+#cont {
+  /*Disposición del contenedor de alternancia de de texto - imagen*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+
+}
+
+#textoCont {
+  /*Contenedor de texto*/
+  max-width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#tit {
+  /*Identificador de la etiqueta de título*/
+  font-size: 68px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+
+}
+
+#cont #tit {
+  font-size: 38px;
+}
+
+#text {
+  /*Idnetificador de etiqueta de texto del contenedor #cont*/
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.imgCont { /*Contendeor de imagen*/
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgCont img { 
+  max-width: 100%;
+  height: auto; 
+  object-fit: cover;
+}
+
+img:hover {
+  /*Animación de imagen específica cuando se mantiene el ratón*/
+  transform: scale(1.05);
+  transition: transform 0.5s ease, margin 0.5s ease;
+
+}
+
+video {
+  /*Forma de vídeo*/
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-container {
+  /*Contenedor de vídeo de presentación*/
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media (max-width: 500px) {
+
+  /*Media responsive para cambiar la forma de disposición de los elementos de RRSS */
+  .footer ul li {
+    margin: 0px 5px;
+  }
+
+  .imgCont {
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - TechDesk Solutions</title>
+    <link rel="stylesheet" type="text/css" href="Home.css" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- Script Font -->
+</head>
+
+<body>
+    <!-- Page Header -->
+    <div class="header">
+        <a href="Home.html">
+            <img src="img/logo.png" height="64px" width="64px" alt="Logo">
+        </a>
+        <a href="Catalogo.html" id="opci">
+            <p>Catalog</p>
+        </a>
+        <a href="Noticias.html" id="opci">
+            <p>News</p>
+        </a>
+        <a href="Fotos.html" id="opci">
+            <p>Photos</p>
+        </a>
+        <a href="FAQ.html" id="opci">
+            <p>FAQ</p>
+        </a>
+        <a href="https://techdesksolutions.milaulas.com/my/" id="opci">
+            <p>Moodle</p>
+        </a>
+        <div id="language-switcher">
+            <a href="../Es/Home.html"><img src="img/es.png"  id="Idiomas"  alt="Español" width="30px"></a>
+            <a href="../Fr/Home.html"><img src="img/fr.png"   id="Idiomas" alt="Français" width="30px"></a>
+        </div>
+        
+        <!-- Register and Login Buttons -->
+        <div class="buttons-container">
+            <a href="Registrar.html"><button id="login" class="btn btn-primary">Register</button></a>
+            <a href="Inicio.html"><button class="btn btn-primary" id="register">Login</button></a>
+        </div>
+    </div>
+
+    <!-- Page Body -->
+    <div class="body">
+
+        <div id="panelRec" style="display: block; margin-top: 20px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9; border-radius: 10px; transition: opacity 0.5s ease;">
+            <h3>Suggested Product</h3>
+            <div style="display: flex; align-items: center;">
+                <!-- Contenedor del texto -->
+                <div style="flex: 1; margin-right: 10px;">
+                    <p><strong>PC Gamer - RTX 4060</strong></p>
+                    <p>Enjoy exceptional performance with our Gaming PC equipped with an RTX 4060</p>
+                    <p><strong>Price:</strong> 999€</p>
+                    <button class="btn btn-primary">Buy It</button>
+                    <button class="btn btn-secondary" onclick="eliminar()">Remove</button>
+                </div>
+                <!-- Contenedor de la imagen -->
+                <div style="flex-shrink: 0;">
+                    <img src="img/pc6.png" alt="Imagen del Producto" style="width: 100%; max-width: 300px; display: block;">
+                </div>
+            </div>
+            <script>
+                function eliminar(){
+                    let div = document.getElementById("panelRec");
+                    div.style.opacity = "0";
+                    setTimeout(() => { div.remove(); }, 500);
+                }
+            </script>
+        </div>
+
+        <div id="Cont2"> <!-- Container to restrict max width -->
+            <h1 id="tit">
+                <center>Welcome to TechDesk Solutions</center>
+            </h1>
+            <p id="text">
+                <center>At TechDesk Solutions, we specialize in repairing technological devices
+                    and creating professional documents such as PowerPoint presentations, Excel spreadsheets, and more.
+                    We are committed to providing you with fast and effective solutions for all your tech needs.</center>
+            </p>
+
+            <center>
+                <div class="video-container">
+                    <video controls>
+                        <source src="img/Madero.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <br>
+            </center>
+
+            <div id="cont">
+                <div id="textoCont">
+                    <h3 id="tit">Device Repair</h3>
+                    <p id="text">We offer repair services for laptops, PCs, and other electronic devices.
+                        Our team of experts diagnoses and solves any technical issue. We provide excellent quality,
+                        top-notch service, and a guarantee to leave with a smile.</p>
+                </div>
+                <div class="imgCont">
+                    <img src="img/Pc1.jpeg" id="img" alt="Desktop Computer Image">
+                </div>
+            </div>
+
+            <div id="cont">
+                <div id="textoCont">
+                    <h3 id="tit">Document Creation</h3>
+                    <p id="text">Do you need a professional PowerPoint presentation or an Excel spreadsheet to
+                        manage anything that comes to mind? Our team is ready to help you create
+                        professional and personalized documents.</p>
+                </div>
+                <div class="imgCont">
+                    <img src="img/microsoft.jpg" id="img" alt="Microsoft Office Services Image">
+                </div>
+            </div>
+
+            <div id="cont">
+                <div id="textoCont">
+                    <h3 id="tit">Technical Support</h3>
+                    <p id="text">We provide remote and in-person technical support to resolve any issues you
+                        may have with your devices or software.</p>
+                </div>
+                <div class="imgCont">
+                    <img src="img/laptop_maintenance-512.png" id="img"
+                        alt="Minimalist computer repair icon with wrench">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div id="fila1">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="https://www.threads.net/@techdesksolutions"><img src="img/fb.png" alt="Threads logo"
+                                height="32px" width="32px" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/techdesksolutions/"><img src="img/ig.png"
+                                alt="Instagram logo" height="32px" width="32px" alt="Instagram"></a></li>
+                    <li><a href="https://x.com/TechDeskSlution"><img src="img/tw.avif" alt="Twitter logo"
+                                height="32px" width="32px" alt="Twitter"></a></li>
+                </ul>
+            </div>
+
+            <div id="fila2">
+                <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a
+                        property="dct:title" rel="cc:attributionURL" href="http://#">TechDesk Solutions</a> by <a
+                        rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://#">Gabriel
+                        Callejón</a> is licensed under <a
+                        href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank"
+                        rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0 <img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a>
+                </p>
+            </div>
+        </div>
+</body>
+</html>
