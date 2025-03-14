@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - TechDesk Solutions</title>
+    <link rel="stylesheet" type="text/css" href="Home.css" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- Script Font -->
+</head>
+
+<body>
+    <!-- En-tête de la page -->
+    <div class="header">
+        <a href="Home.html">
+            <img src="img/logo.png" height="64px" width="64px" alt="Logo">
+        </a>
+        <a href="Catalogo.html" id="opci">
+            <p>Catalogue</p>
+        </a>
+        <a href="Noticias.html" id="opci">
+            <p>Actualités</p>
+        </a>
+        <a href="Fotos.html" id="opci">
+            <p>Photos</p>
+        </a>
+        <a href="FAQ.html" id="opci">
+            <p>FAQ</p>
+        </a>
+        <a href="https://techdesksolutions.milaulas.com/my/" id="opci">
+            <p>Moodle</p>
+        </a>
+        <div id="language-switcher">
+            <a href="../Es/Home.html"><img src="img/es.png"  id="Idiomas"  alt="Espagnol" width="30px"></a>
+            <a href="../Uk/Home.html"><img src="img/gb.png"  id="Idiomas"  alt="Anglais" width="30px"></a>
+        </div>
+        
+        <!-- Boutons d'inscription et de connexion -->
+        <div class="buttons-container">
+            <a href="Registrar.html"><button id="login" class="btn btn-primary">S'inscrire</button></a>
+            <a href="Inicio.html"><button class="btn btn-primary" id="register">Se connecter</button></a>
+        </div>
+    </div>
+
+    <!-- Corps de la page -->
+    <div class="body">
+
+        <div id="panelRec" style="display: block; margin-top: 20px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9; border-radius: 10px; transition: opacity 0.5s ease;">
+            <h3>Produit recommandé</h3>
+            <div style="display: flex; align-items: center;">
+                <!-- Contenedor del texto -->
+                <div style="flex: 1; margin-right: 10px;">
+                    <p><strong>PC Gamer - RTX 4060</strong></p>
+                    <p>Profitez de performances exceptionnelles avec notre PC Gamer équipé d'une RTX 4060</p>
+                    <p><strong>Prix:</strong> 999€</p>
+                    <button class="btn btn-primary">Acheter</button>
+                    <button class="btn btn-secondary" onclick="eliminar()">Retirer</button>
+                </div>
+                <!-- Contenedor de la imagen -->
+                <div style="flex-shrink: 0;">
+                    <img src="img/pc6.png" alt="Imagen del Producto" style="width: 100%; max-width: 300px; display: block;">
+                </div>
+            </div>
+            <script>
+                function eliminar(){
+                    let div = document.getElementById("panelRec");
+                    div.style.opacity = "0";
+                    setTimeout(() => { div.remove(); }, 500);
+                }
+            </script>
+        </div>
+
+        <div id="Cont2"> <!-- Conteneur pour restreindre la largeur maximale -->
+            <h1 id="tit">
+                <center>Bienvenue chez TechDesk Solutions</center>
+            </h1>
+            <p id="text">
+                <center>Chez TechDesk Solutions, nous sommes spécialisés dans la réparation d'appareils technologiques
+                    et la création de documents professionnels tels que des présentations PowerPoint, des feuilles de calcul Excel et bien plus encore.
+                    Nous nous engageons à vous fournir des solutions rapides et efficaces pour tous vos besoins technologiques.</center>
+            </p>
+
+            <center>
+                <div class="video-container">
+                    <video controls>
+                        <source src="img/Madero.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                </div>
+                <br>
+            </center>
+
+            <div id="cont">
+                <div id="textoCont">
+                    <h3 id="tit">Réparation d'appareils</h3>
+                    <p id="text">Nous proposons des services de réparation pour ordinateurs portables, PC et autres appareils électroniques.
+                        Notre équipe d'experts diagnostique et résout tout problème technique. Nous offrons une qualité excellente,
+                        un service de premier ordre et une garantie de satisfaction.</p>
+                </div>
+                <div class="imgCont">
+                    <img src="img/Pc1.jpeg" id="img" alt="Image d'ordinateur de bureau">
+                </div>
+            </div>
+
+            <div id="cont">
+                <div id="textoCont">
+                    <h3 id="tit">Création de documents</h3>
+                    <p id="text">Vous avez besoin d'une présentation PowerPoint professionnelle ou d'une feuille de calcul Excel
+                        pour gérer vos projets ? Notre équipe est prête à vous aider à créer
+                        des documents professionnels et personnalisés.</p>
+                </div>
+                <div class="imgCont">
+                    <img src="img/microsoft.jpg" id="img" alt="Image des services Microsoft Office">
+                </div>
+            </div>
+
+            <div id="cont">
+                <div id="textoCont">
+                    <h3 id="tit">Support technique</h3>
+                    <p id="text">Nous offrons une assistance technique à distance et en personne pour résoudre tout problème que vous
+                        pourriez rencontrer avec vos appareils ou logiciels.</p>
+                </div>
+                <div class="imgCont">
+                    <img src="img/laptop_maintenance-512.png" id="img"
+                        alt="Icône minimaliste de réparation d'ordinateur avec une clé">
+                </div>
+            </div>
+        </div>
+
+        <!-- Pied de page -->
+        <div class="footer">
+            <div id="fila1">
+                <ul>
+                    <li><a href="#">Nous contacter</a></li>
+                    <li><a href="https://www.threads.net/@techdesksolutions"><img src="img/fb.png" alt="Logo Threads"
+                                height="32px" width="32px"></a></li>
+                    <li><a href="https://www.instagram.com/techdesksolutions/"><img src="img/ig.png"
+                                alt="Logo Instagram" height="32px" width="32px"></a></li>
+                    <li><a href="https://x.com/TechDeskSlution"><img src="img/tw.avif" alt="Logo Twitter"
+                                height="32px" width="32px"></a></li>
+                </ul>
+            </div>
+
+            <div id="fila2">
+                <p>© 2024 TechDesk Solutions - Tous droits réservés</p>
+            </div>
+        </div>
+</body>
+</html>
