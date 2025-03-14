@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do{
+            var a=prompt("Ingrese un numero");
+        }while(!Number(a));
+        do{
+            var b=prompt("Ingrese un numero");
+        }while(!Number(b));
+        a=parseInt(a);
+        b=parseInt(b);
+        var c=parseInt(a)+parseInt(b);
+        var d=parseInt(a)+parseInt(b);
+        if(a>b){
+            alert("Como el primer numero es mayor que el segundo,\nla suma de ellos son: "+c+" y la resta: "+d);
+        }else{
+            alert("Como el primer numero es menor o igual que el segundo, \nel producto da: "+a*b+" y el cociente: "+a/b);
+        }   
+        </script>
+</body>
+</html>

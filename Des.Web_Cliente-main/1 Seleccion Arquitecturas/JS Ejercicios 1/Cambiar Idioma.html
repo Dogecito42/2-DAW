@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    </head>
+    
+    <body style="background-color:gray">
+            <p id="idioma">El texto está en español</p>
+
+            <div>
+                <button type="button" onclick=Español()>Español</button>
+                <button type="button" onclick=Ingles()>Inglés</button>
+                <button type="button" onclick=Ruso()>Ruso</button>
+            </div>
+
+            <script>
+                function Español(){
+                    var a=document.getElementById("idioma");
+                    a.innerHTML="El texto está en español";
+                    a.style.color="Red";
+                    
+                }
+
+                function Ingles(){
+                    var a=document.getElementById("idioma");
+                    a.innerHTML="The text is written in English";
+                    a.style.color="Blue";
+                }
+
+                function Ruso(){
+                    var a=document.getElementById("idioma");
+                    a.innerHTML="Текст на русском языке";
+                    a.style.color="White";
+                }
+            </script>
+    </body>
+</html>

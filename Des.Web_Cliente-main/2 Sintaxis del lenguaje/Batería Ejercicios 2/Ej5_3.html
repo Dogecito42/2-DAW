@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         alert("El programa pide 4 números, para luego sumarlos y multiplicarlos");
+        do{
+            var a=prompt("Ingrese el primer número");
+        }while(!Number(a));
+        do{
+            var b=prompt("Ingrese el segundo número");
+        }while(!Number(b));
+        do{
+            var c=prompt("Ingrese el tercer número");
+        }while(!Number(c));
+        do{
+            var d=prompt("Ingrese el cuarto número");
+        }while(!Number(d));
+
+        a=parseInt(a);
+        b=parseInt(b);
+        c=parseInt(c);
+        d=parseInt(d);
+        var e=a+b+c+d;
+        var f=a*b*c*d;
+
+        alert("La suma de los numeros es :"+e+"\nLa multiplicacion de los numeros : "+f);
+    </script>
+</body>
+</html>

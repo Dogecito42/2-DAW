@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         do{
+            var a=prompt("Ingrese la primera nota");
+        }while(!Number(a));
+        do{
+            var b=prompt("Ingrese la segunda nota");
+        }while(!Number(b));
+        do{
+            var c=prompt("Ingrese la tercera nota");
+        }while(!Number(c));
+
+        a=parseInt(a);
+        b=parseInt(b);
+        c=(a+b+parseInt(c))/3;
+
+        if (c>=4){
+            alert("Regular");
+        }else{
+            alert("Reprobado");
+        }
+
+    </script>
+</body>
+</html>

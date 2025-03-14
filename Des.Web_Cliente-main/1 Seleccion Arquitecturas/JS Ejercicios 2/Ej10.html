@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rombo</title>
+</head>
+<body>
+    <div id="rombo"> </div>
+
+    <script>
+        rombo(prompt("Ingrese el número de filas del rombo"));
+        
+        function rombo(filas) {
+
+    var rombo = document.getElementById("rombo");
+
+    //Rombo arriba y cenrtro
+    for (var i = 0; i < filas; i++) {
+        var linea = "";
+        var espacio = "";
+
+        for (var k = 0; k < filas - i - 1; k++) {
+            espacio += "&nbsp;&nbsp;";
+        }
+
+        linea += "*";
+        for (var j = 1; j < 2 * i; j++) {
+            linea += "&nbsp;&nbsp;"; 
+        }
+        if (i > 0) linea += "*";
+
+        rombo.innerHTML += espacio + linea + "<br>";
+    }
+
+    //Rombo abajo
+    for (var i = filas - 2; i >= 0; i--) {
+        var linea = "";
+        var espacio = "";
+
+        for (var k = 0; k < filas - i - 1; k++) {
+            espacio += "&nbsp;&nbsp;";
+        }
+
+        linea += "*";
+        for (var j = 1; j < 2 * i; j++) {
+            linea += "&nbsp;&nbsp;";
+        }
+        if (i > 0) linea += "*";
+
+
+        rombo.innerHTML += espacio + linea  + "<br>";
+    }
+}
+
+    </script>
+</body>
+</html>

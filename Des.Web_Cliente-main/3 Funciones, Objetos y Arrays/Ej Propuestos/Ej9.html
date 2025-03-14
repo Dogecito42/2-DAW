@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="Ciudad">Ciudad</label>
+    <input type="text" id="ciudad" placeholder="Ej: Aguascalientes">
+    <br>
+    <button onclick="buscar()">Buscar</button>
+    <div id="salida"></div>
+    <script>
+
+        var arrays = ["01000;Ciudad de México",
+            "20000;Aguascalientes",
+            "29000;Tuxtla Gutiérrez",
+            "76000;Querétaro",
+            "80000;Culiacán",
+            "64000;Monterrey",
+            "50000;Toluca",
+            "58000;Morelia",
+            "83100;Hermosillo",
+            "87000;Ciudad Victoria",
+            "72000;Puebla",
+            "35000;Gómez Palacio",
+            "77710;Playa del Carmen",
+            "77000;Chetumal",
+            "91000;Xalapa",
+            "63000;Tepic",
+            "98000;Zacatecas",
+            "86000;Villahermosa",
+            "29000;Tuxtla Gutiérrez",
+            "42000;Pachuca",
+            "60000;Uruapan",
+            "31000;Chihuahua",
+            "24000;Campeche",
+            "83000;Guaymas",
+            "90000;Tlaxcala",
+            "44100;Guadalajara",
+            "82000;Mazatlán",
+            "24000;San Francisco de Campeche",
+            "93000;Poza Rica",
+            "77000;Chetumal",
+            "62520;Cuernavaca",
+            "36400;Purísima del Rincón",
+            "95600;Alvarado",
+            "38400;Valle de Santiago",
+            "96500;Coatzacoal"
+        ];
+
+        var text="<h1>Ciudades encontradas:</h1><br>"
+        function buscar() {
+
+            let ciudad=document.getElementById("ciudad").value;
+            ciudad=ciudad.toLowerCase();
+            for (let i=0; i<arrays.length; i++){
+                let valor=arrays[i].split(";");
+                valor.push(valor[1].toLowerCase());
+                if (valor[2].includes(ciudad)){
+                    text+="<p>"+valor[1]+": "+valor[0]+"</p>";
+                }
+            }
+            document.getElementById("salida").innerHTML=text;
+        }
+
+    </script>
+</body>
+
+</html>

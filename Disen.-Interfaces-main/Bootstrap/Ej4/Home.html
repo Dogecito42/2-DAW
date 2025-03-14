@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Web de Coches</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Web de Coches
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recetas.html">Modelos</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="car1.jpg" class="d-block w-100" alt="Coche 1">
+            </div>
+            <div class="carousel-item">
+                <img src="car2.jpg" class="d-block w-100" alt="Coche 2">
+            </div>
+            <div class="carousel-item">
+                <img src="car3.jpg" class="d-block w-100" alt="Coche 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1 class="text-center">Bienvenidos a la Web de Coches</h1>
+        <p class="text-center">Encuentra los mejores modelos y compara sus características.</p>
+
+        <!-- Cards Section -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="car_feature1.jpg" class="card-img-top" alt="Coche destacado">
+                    <div class="card-body">
+                        <h5 class="card-title">Modelo Deportivo</h5>
+                        <p class="card-text">Descubre las mejores prestaciones en nuestros coches deportivos.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="car_feature2.jpg" class="card-img-top" alt="Coche familiar">
+                    <div class="card-body">
+                        <h5 class="card-title">Coche Familiar</h5>
+                        <p class="card-text">Espacio, seguridad y confort para toda la familia.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="car_feature3.jpg" class="card-img-top" alt="Coche eléctrico">
+                    <div class="card-body">
+                        <h5 class="card-title">Eléctrico</h5>
+                        <p class="card-text">Sostenibilidad y eficiencia en cada kilómetro.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3">
+            © 2024 Web de Coches:
+            <a class="text-dark" href="#">webdecoches.com</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

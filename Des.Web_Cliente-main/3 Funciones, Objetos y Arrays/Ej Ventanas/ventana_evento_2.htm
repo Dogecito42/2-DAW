@@ -1,0 +1,106 @@
+<html>
+
+<head>
+   <title>
+      P&aacute;gina con Javascript.
+   </title>
+
+</head>
+
+<body>
+   <button onclick="abrirVentana(parametros);">
+      Pulse
+   </button>
+   <button onclick="cerrarVentana()">Cerrar</button>
+   <div id="Label">
+
+      <label for="xCoord">Coordenada X:</label>
+      <input type="number" id="xCoord" placeholder="200" default="200"><br>
+
+      <label for="yCoord">Coordenada Y:</label>
+      <input type="number" id="yCoord" placeholder="200" default="200"><br>
+
+      <label for="tiempo">tiempo de carga</label>
+      <input type="number" id="tiempo" placeholder="5" default="200"><br>
+
+      <label for="txt">Texto de ventana</label>
+      <input type="text" id="txt" placeholder="Ej: Madero Jones" default="200"><br>
+
+      <label for="height">Altura</label>
+      <input type="text" id="height" placeholder="200" default="200"><br>
+
+      <label for="width">Anchura</label>
+      <input type="text" id="width" placeholder="200" default="200"><br>
+
+   </div>
+   <label for="color">Color de fondo</label>
+   <select name="select" id="color">
+      <option value="#fcf803">Amarillo</option>
+      <option value="#89c412" selected>Verde</option>
+      <option value="#e87109">Naranja </option>
+   </select>
+   <label for="color2">Color de texto</label>
+   <select name="select" id="color2">
+      <option value="#fcf803">Amarillo</option>
+      <option value="#89c412" selected>Verde</option>
+      <option value="#e87109">Naranja </option>
+   </select>
+   <button onclick="datos()">Pedir todos los datos</button><br>
+   <button onclick="focus()">Focus</button>
+   <button onclick="blur()">Blur</button>
+   <script language="javascript">
+
+      var parametros = "width=400, height=300, left=200, top=150 resizable=no, menubar=no, toolbar=no, directories=no, location=no, scrollbars=no, status=no";
+
+      function datos() {
+         //Recogida de datos
+         let left = parseInt(document.getElementById("xCoord").value, 10);
+         let top = parseInt(document.getElementById("yCoord").value, 10);
+         let time= (parseInt(document.getElementById("tiempo").value, 10))*1000;
+         let color = document.getElementById("color").value;
+         let color2 = document.getElementById("color2").value;
+         let width = parseInt(document.getElementById("width").value, 10);
+         let height = parseInt(document.getElementById("height").value, 10);
+
+         //Parametros de la forma de la ventana
+         let parametrosC = "width="+width+", height="+height+", left=" + left + ", top=" + top + " resizable=no, menubar=no, toolbar=no, directories=no, location=no, scrollbars=no, status=no";
+
+         //Abrimos la ventana
+         ventana = window.open("texto_de_secundaria_2.htm", "ventana", parametros);
+
+         //Cargamaos el color de fondo y letra y el contenido de la ventana
+         ventana.onload = function () {
+         ventana.document.body.style.backgroundColor = color; 
+         ventana.document.body.innerHTML= "<h1>"+document.getElementById("txt").value+`</h1><button onClick='self.close();'>
+         Cerrar
+      </button>`;
+         ventana.document.body.style.color = color2;
+         };
+
+         //Tiempo que se queda la ventana
+         setTimeout("ventana.close()", time );
+      }
+
+      //Abrimos la ventana sin parametros
+      function abrirVentana(parametros) {
+         ventana = window.open("texto_de_secundaria_2.htm", "ventana", parametros);
+      }
+
+      //Cerramos la ventana
+      function cerrarVentana() {
+         ventana.close();
+      }
+      
+      function focus(){
+        if (ventana) ventana.focus();
+      }
+
+      function blur(){
+         if (ventana)ventana.blur();
+      }
+
+   </script>
+
+</body>
+
+</html>

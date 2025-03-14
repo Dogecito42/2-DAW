@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*14. Haz un programa que haga lo mismo que el anterior, pero además nos dé la suma
+de todos los números introducidos, exceptuando el 9999Graba el programa con el
+nombre 2dawN.htm en TuCarpeta.*/
+var suma=0;
+var cont=0;
+        var num;
+        do{
+            num=prompt("Escribe números para devolver la suma. El programa acaba al escrbir 9999");
+            
+            if (parseInt(num)!==9999){
+                suma=suma+parseInt(num);
+                cont++;
+            }
+
+        }while(parseInt(num)!==9999);
+
+        alert("El resultado da "+suma+ ", siendo en total "+cont+" números");
+    </script>
+</body>
+</html>

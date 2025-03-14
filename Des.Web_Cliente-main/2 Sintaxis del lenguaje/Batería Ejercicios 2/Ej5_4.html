@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Indica el precio del producto y la cantidad de productos para calcular el total");
+        do{
+                var a=prompt("Indica el precio del producto");
+        }while(Number.isInteger(a));
+        do{
+                var b=prompt("Indica la cantidad de productos");
+        }while(Number.isInteger(b));
+        a=parseInt(a);
+        b=parseInt(b);
+
+        alert("El total es: "+a*b);
+    </script>
+</body>
+</html>

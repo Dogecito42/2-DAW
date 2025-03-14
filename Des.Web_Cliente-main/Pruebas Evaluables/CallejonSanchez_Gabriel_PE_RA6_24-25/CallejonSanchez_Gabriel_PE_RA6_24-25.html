@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Evaluable PE RA6 24-25</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Gabriel Callejón Sánchez: Prueba Evaluable PE RA6 24-25</h1>
+    </center>
+
+    <div id="formulario">
+        <form action="javascript:void(0)" id="usuario">
+            <!-- La linea de acción sustuye a  la función de Js de PreventEventDefault (Enviar la acción de formulario)-->
+            <h1 class="string">Inicio de Sesión de Usuario</h1>
+
+            <label class="string">Nombre: </label>
+            <input name="nombre" type="text" placeholder="Sin números">
+            <br><br>
+
+            <label class="string">Apellidos: </label>
+            <input name="apellidos" type="text" placeholder="Sin números">
+            <br><br>
+
+            <label class="string">Código de verificación: </label>
+            <input name="cod" type="text" placeholder="4 dígitos y 1 letra Mayus">
+            <br><br>
+
+            <div class="error"></div>
+            <br><br>
+
+            <div class="logIn"></div>
+            <br><br>
+
+            <button class="boton" onclick="sesionUser()" class="string">Iniciar sesión</button>
+            <br><br>
+
+
+        </form>
+    </div>
+
+    <br>
+    <form action="javascript:void(0)" id="administrador">
+        <h1 class="string">Inicio de sesión de Administrador (Requiere el inicio de Usuario)</h1>
+
+        <label class="string">Usuario Administrador: </label>
+        <input name="admin" type="text" placeholder="Admin">
+        <br><br>
+
+        <label class="string">Clave de Acceso: </label>
+        <input name="clave" type="text" placeholder="Código de verif. sin letra">
+        <br><br>
+
+        <div class="error"></div>
+        <br><br>
+
+        <div class="logIn"></div>
+        <br><br>
+
+        <button class="boton" onclick="sesionAdmin()" class="string">Iniciar sesión como Administrador</button>
+        <br><br>
+
+        <div class="idioma"></div>
+        <br><br>
+        <div class="salida"></div>
+
+    </form>
+</body>
+
+
+<script src="CallejonSanchez_Gabriel_PE_RA6_24-25.js"></script>
+
+</html>
+
+<style>
+    body {
+        background-color: #2e2e2e;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+
+    form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        color: #000;
+    }
+
+    button {
+        background-color: #13ad34;
+        max-width: 150px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    input{
+        border-radius: 5px;
+        max-width: 300px;
+
+    }
+
+    .error {
+        color: red;
+    }
+
+    .logIn {
+        color: green;
+    }
+</style>

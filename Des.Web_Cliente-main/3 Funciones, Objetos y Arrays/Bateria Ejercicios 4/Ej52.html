@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="salida"></div>
+    
+    <script>
+
+        var vector=[];
+        var vector2=[];
+        let min=1000;
+        let pos;
+        for (var i=0; i<10; i++){
+            let num = Math.random() * (1000 - 0) + 0;
+            vector.push(Math.floor(num));
+        }
+
+        for (var i=0; i<vector.length; i++){
+            if (vector[i]<min){
+                min=vector[i];
+            }
+        }
+
+        pos=vector.indexOf(min);
+
+        for (var i=pos; i<vector.length; i++){
+            vector2.push(vector[i]);
+        }
+        document.getElementById("salida").innerHTML=vector2.toString();
+    </script>
+</body>
+</html>

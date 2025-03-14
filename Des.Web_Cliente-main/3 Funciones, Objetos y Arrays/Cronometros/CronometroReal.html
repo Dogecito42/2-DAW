@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <button id="pausa" onclick=parar()>Pausar</button>
+    <button id="Continua" onclick=continuar()>Continua</button>
+    <button id="Restablecer" onclick=Restablecer()>Restablecer</button>
+    <div id="hora"></div>
+
+    <script>
+        function Continua() {
+
+            var horas=0, minutos=0, segundos=0;
+
+            segundos++;
+            if (horas < 10) { horas = '0' + horas; }
+            if (minutos < 10) { minutos = '0' + minutos; }
+            if (segundos < 10) { segundos = '0' + segundos; }
+
+            var texto = document.getElementById('hora');
+            texto.innerHTML;
+            var texto = document.getElementById('hora');
+            texto.innerHTML = horas + ':' + minutos + ':' + segundos + ' ' + ampm;
+        }
+
+        function parar(){
+      elCrono=clearInterval(elCrono);
+    }
+    function continuar(){
+      elCrono=setInterval(crono, 1000);
+    }
+
+    function Restablecer(){
+        horas=0;
+        minutos=0;
+        segundos=0;
+        continuar();
+    }
+    </script>
+</body>
+
+</html>

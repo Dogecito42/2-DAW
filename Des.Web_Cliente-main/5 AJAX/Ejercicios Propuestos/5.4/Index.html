@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Suma dos números con AJAX y jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnSuma").click(function () {
+                $.post("suma.php",
+                    $("#formulario").serialize(),
+                    function (data, status) {
+                        $("#respOperacion").html(data); 
+                    }
+                );
+            });
+    
+            $("#btnResta").click(function () {
+                $.post("resta.php",
+                    $("#formulario").serialize(), 
+                    function (data, status) {
+                        $("#respOperacion").html(data);
+                    }
+                );
+            });
+        });
+    </script>
+    
+</head>
+
+<body>
+    <form method="post" id="formulario">
+        Introduzca dos valores para calcular la suma:<br>
+        <input type="number" name="valor1" placeholder="valor1" autofocus><br>
+        <input type="number" name="valor2" placeholder="valor2"><br>
+        <input type="button" id="btnSuma" value="Suma">
+        <input type="button" id="btnResta" value="Resta">
+    </form>
+    <br>
+    <div id="respOperacion"></div>
+</body>
+
+</html>

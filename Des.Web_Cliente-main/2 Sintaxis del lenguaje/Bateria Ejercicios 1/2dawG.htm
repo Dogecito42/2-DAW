@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Haz un programa de nombre 2dawG.htm, que has de grabar en TuCarpeta, que
+funcione de la siguiente forma:
+- El programa nos pide un número.
+- Utiliza tres contadores:
+ Un contador: suma 5
+ Otro contador: suma 21
+ Otro contador: resta 4
+- El programa nos presenta los 4 números de la siguiente forma:
+ La primera línea: el número introducido.
+ La segunda línea: los tres números tabulados, que
+han resultado de los tres contadores.
+De forma que si introducimos el nº 5 debería aparecer:*/
+
+        var a=prompt("Introduce un numero");
+        a=parseInt(a);
+        var cont1=a+5;
+        var cont2=a+21;
+        var cont3=a-4;
+        cont1=parseInt(cont1);
+
+        cont2=parseInt(cont2);
+        cont3=parseInt(cont3);
+        alert("Número introducido: "+a+ "\nContadores:\t"+cont1+"\t"+cont2+"\t"+cont3);
+    </script>
+</body>
+</html>

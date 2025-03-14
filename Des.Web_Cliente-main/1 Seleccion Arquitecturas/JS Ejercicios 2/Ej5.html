@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var dato=prompt("Indica un número para poder devolver ese número +2. Esto se hará por una función");
+        dato=parseInt(dato);
+        alert(sum(dato));
+
+        function sum(dato){
+
+            alert("El valor de la variable es inalterado puesto que se ejecuta este proceso en función:");
+            return dato+2;
+        }
+        alert("Modificamos la variable en el main:");
+        dato=dato+2;
+        alert(dato);
+    </script>
+</body>
+</html>

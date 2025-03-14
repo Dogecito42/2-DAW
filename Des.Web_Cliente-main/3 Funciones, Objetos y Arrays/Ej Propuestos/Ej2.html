@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="programa()">Madero </button>
+    <div id="salida"></div>
+
+    <script>
+
+        function programa(){
+            var frase=prompt("Indique la frase para buscar la última posición de la palabra que quiera buscar");
+            var palabra=prompt("Inidica la palabra que quiere buscar");
+
+            var pos=frase.indexOf(palabra);
+
+            do{
+                pos++;
+            }while(frase.charAt(pos)!=" ");
+
+            pos--;
+
+            document.getElementById("salida").innerHTML="La última posición de la palabra "+palabra+' en la frase "'+frase+'" es '+pos+"<br> El caracter es : "+frase.charAt(pos);
+        }
+
+
+    </script>
+</body>
+</html>

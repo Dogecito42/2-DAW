@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/*Fuente Script:*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+/*Fuente Host Grotesk*/
+
+.header {
+  background-image: linear-gradient(#526D82, #DDE6ED);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.botones {
+  margin-left: auto;
+
+}
+
+.header img {
+  height: 64px;
+  width: 64px;
+  margin-right: 20px;
+  object-position: center;
+  transition: transform 0.5s ease, margin 0.5s ease;
+}
+
+.header p,
+.header a {
+  color: #dad9d9;
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+
+.header button {
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px 15px;
+}
+
+#login {
+  background-color: #27374D;
+  color: #dddada;
+  border: #27374D;
+  transition: transform 0.5s ease, margin 0.5s ease;
+
+}
+
+#register {
+  background-color: #9DB2BF;
+  border: #9DB2BF;
+  transition: transform 0.5s ease, margin 0.5s ease;
+
+}
+
+#logopng img:hover {
+  transform: scale(1.25);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header p:hover,
+.header a:hover {
+  font-weight: bold;
+  color: #000;
+}
+
+#login:hover {
+  transform: scale(1.25);
+
+}
+
+#register:hover {
+  transform: scale(1.25);
+
+}
+
+.footer {
+  background-image: linear-gradient(#DDE6ED, #526D82);
+  padding: 10px;
+  font-family: "Host Grotesk";
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #27374D;
+  transition: 0.5s;
+}
+
+.footer ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+#fila1 {
+  color: #526D82;
+  font-size: 20px;
+}
+
+#fila2 {
+  color: #000;
+  font-size: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+#fila2 p {
+  text-align: center;
+}
+
+#fila1 img:hover {
+  transform: scale(1.25);
+}
+
+.footer a:hover {
+  color: #000;
+}
+
+/*      Señala dentro del código las siguientes propiedades del texto
+a.      Fuente de letra. Font family
+b.      Alineación de texto. Text-align
+d.      Tabulado del texto. Text-indent
+*/
+
+.body {
+  background-color: #DDE6ED;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Host Grotesk";
+}
+
+#imgin img {
+  size: 100%;
+}
+
+#Cont2 {
+  max-width: 80%;
+  text-align: justify;
+  padding: 20fpx;
+}
+
+/*      Señala dentro del código las siguientes propiedades del texto
+
+c.      Decoración del texto. Text-decoration*/
+
+
+
+/*      Señala dentro del código las siguientes propiedades del texto:
+a.      Interlineado de texto. Line-height*/
+
+body,
+p,
+h1,
+h3 {
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  line-height: 28px;
+}
+
+/*Uso de fuente personalizada:
+a.      Fuente de letra. Font family
+b.      Tamaño de letra. Font size
+c.      Estilo de letra. Font- style
+*/
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 48px;
+}
+
+
+#cont {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+#textoCont {
+  max-width: 80%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*Uso de fuente personalizada:
+d.      Grosor de letra. Font-weight*/
+
+#tit {
+  font-size: 68px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+
+}
+
+#cont #tit {
+  font-size: 38px;
+}
+
+#text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#imgCont {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#img {
+  width: 100%;
+  height: auto;
+}
+
+.Estrellas {
+  display: flex;
+  direction: row;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.Estrella {
+  color: lightgray;
+  transition: color 0.2s;
+}
+
+.Estrella.filled {
+  color: gold;
+}
+
+#valorar{
+  padding-left: 10px;
+}
+
+@media (max-width: 500px) {
+  .footer ul li {
+    margin: 0px 5px;
+  }
+
+  #imgCont {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  #cont {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #textoCont {
+    max-width: 100%;
+    text-align: justify;
+  }
+
+  .imgCont {
+    max-width: 100%;
+  }
+
+  #img {
+    width: 100%;
+    height: auto;
+  }
+}

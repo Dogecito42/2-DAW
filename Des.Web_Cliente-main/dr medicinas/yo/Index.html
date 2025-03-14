@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="javascript:void(0)" id="form">
+        <div id="inicio">
+            <h1 class="string">Registro de datos</h1>
+            <label class="string">Nombre: </label>
+            <input type="text" name="nombre">
+            <br>
+
+            <label class="string">Nombre: </label>
+            <input type="text" name="apellidos">
+            <br>
+
+            <label class="string">Código de verificación</label>
+            <input type="password" name="cod">
+            <br>
+
+            <button onclick="inicio()" class="botones">Registrar</button>
+
+
+            <div class="errores"></div>
+
+        </div>
+        <hr>
+        <div id="registro">
+            <h1 class="string">Iniciar sesión</h1>
+
+            <label class="string">Usuario Administrador</label>
+            <input type="text" name="usuario">
+            <br>
+
+            <label class="string">Clave de acceso</label>
+            <input type="password" name="clave">
+            <br>
+
+            <button onclick="verificacion()" class="botones">Modo admin</button>
+            <div class="errores"></div>
+        </div>
+    </form>
+</body>
+
+
+<script src="script.js"></script>
+</html>

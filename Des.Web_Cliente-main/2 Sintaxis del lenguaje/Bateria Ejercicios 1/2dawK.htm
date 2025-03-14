@@ -1,0 +1,36 @@
+<!--El siguiente programa tiene errores. Escríbelo y corrígelo para que funcione
+(grábalo con el nombre 2dawK.htm en TuCarpeta):
+<SCRIPT>
+<HTML LANGUAGE="JavaScript"
+// 2DAWA.HTM
+var farenheit,celsius,
+var s="";
+for(i=-2;i<=12:i++)
+{
+celsius=10*i;
+farenheit=32+(celsius*9)/5;
+s=s+"C= "+celsius+" F= "+farenheit+"\n";
+if (celsius==0) s=s+"Punto congelación del Agua\n";
+if (celsius==100) s=s+"Punto de ebullición del Agua\n";
+}
+alert(s;
+<//SCRIPT>
+<HTML>-->
+
+    <HTML>  <!--La etiqueta HTML estaba incompleta-->
+        <script LANGUAGE="JavaScript"> //Etiqueta script incompleta
+        //2DAWA.HTM
+        var farenheit, celsius; //La instrucción finaliza con ;
+        var s="";
+        for(i=-2;i<=12;i++) //Las instrucciones del for se diferencian con ;
+        {
+            celsius=10*i;
+            farenheit=32+(celsius*9)/5;
+            s=s+"C= "+celsius+" F= "+farenheit+"\n";
+            if (celsius==0) s=s+"Punto congelación del Agua\n";
+            if (celsius==100) s=s+"Punto de ebullición del Agua\n";
+        }
+    alert(s);
+</script>
+
+</HTML>

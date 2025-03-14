@@ -1,0 +1,217 @@
+<div class="Texto">
+
+
+        <br>
+        <div id="intro">
+            <h5>En nuestra empresa, estamos comprometidos a proporcionar soluciones tecnológicas integrales para
+                satisfacer todas las necesidades de nuestros clientes. Contamos con un equipo altamente cualificado y
+                especializado en el montaje y reparación de equipos informáticos, la gestión avanzada de documentos
+                (Microsoft PowerPoint, Excel, Word, etc.), y la creación de páginas web sencillas y atractivas. Queremos
+                convertirnos en tu socio de confianza en la era digital, ofreciendo un servicio completo que cubra desde
+                el hardware hasta la presentación de tus ideas y tu presencia en internet.</h5>
+        </div>
+        <br>
+        <h3>1. Montaje y Reparación de Equipos Informáticos</h3>
+        <br>
+        <h5>Sabemos lo esencial que es el correcto funcionamiento de los equipos tecnológicos para el éxito de cualquier
+            negocio o proyecto. Por ello, ofrecemos un servicio completo de montaje y reparación para garantizar que tus
+            dispositivos estén siempre en perfecto estado.</h5>
+        <br>
+
+
+        <ol>
+            <li>
+                <h4>Montaje de Equipos a Medida </h4>
+                <br>
+                <ul>
+                    <li>
+                        <h5><strong>Asesoramiento Personalizado:</strong>
+                            <br>
+                            Entendemos que cada cliente tiene necesidades particulares.
+                            Te ayudamos a elegir los componentes adecuados para montar el equipo que mejor se adapte a
+                            tus requisitos, ya sea para uso doméstico, trabajo de oficina, diseño gráfico, o gaming.
+                        </h5>
+                        <br>
+                    </li>
+                    <br>
+                    <li>
+                        <h5><strong>Montaje Profesional:</strong>
+                            <br>
+                            Realizamos el ensamblaje de equipos de escritorio y estaciones de
+                            trabajo de forma minuciosa, utilizando componentes de alta calidad y asegurando una
+                            integración
+                            óptima. Nuestro objetivo es que el equipo sea fiable, eficiente y esté preparado para
+                            funcionar
+                            a pleno rendimiento.
+                        </h5>
+                    </li>
+                    <br><br>
+                    <li>
+                        <h5><strong>Optimización del Rendimiento:</strong>
+                            <br>
+                            Nos aseguramos de que cada sistema esté optimizado para
+                            alcanzar el mejor rendimiento, ya sea ajustando las configuraciones de hardware o instalando
+                            el
+                            software adecuado.
+                        </h5>
+                    </li>
+                    </h5>
+                    <br>
+                </ul>
+            </li>
+            <li>
+                <h4>Reparación y Mantenimiento de Equipos</h4><br>
+                <ul>
+                    <li>
+                        <h5><strong>Diagnóstico Completo:</strong>
+                            <br>
+                            Realizamos un diagnóstico integral para identificar problemas en el hardware o software de
+                            tus
+                            equipos. Utilizamos herramientas avanzadas para detectar rápidamente cualquier falla, ya sea
+                            un
+                            problema de rendimiento, un virus o un mal funcionamiento del sistema operativo.
+                        </h5>
+                    </li>
+                    <br><br>
+                    <li>
+                        <h5><strong>Reparación de Hardware:</strong>
+                            <br>
+                            Ofrecemos servicios de reparación de componentes, como placas base, discos duros, fuentes de
+                            alimentación y tarjetas gráficas. También manejamos problemas como el sobrecalentamiento,
+                            cambios de
+                            pasta térmica, y reemplazo de ventiladores.
+                        </h5>
+                    </li>
+                    <br><br>
+                    <li>
+                        <h5>
+                            <strong>Mantenimiento Preventivo:</strong>
+                            <br>
+                            El mantenimiento regular es fundamental para prevenir problemas futuros. Limpieza interna de
+                            polvo,
+                            verificación de componentes y análisis de rendimiento son algunas de las tareas que llevamos
+                            a
+                            cabo
+                            para asegurar que tu equipo esté en condiciones óptimas.
+                        </h5>
+                    </li>
+                    <br><br>
+                    <li>
+                        <h5><strong>Actualización de Equipos:</strong>
+                            <br>
+                            Nos encargamos de la actualización de componentes para mejorar el rendimiento de tus
+                            dispositivos.
+                            Ya sea una ampliación de memoria RAM, cambio de disco duro a SSD, o instalación de nuevas
+                            tarjetas
+                            gráficas, ayudamos a que tus equipos se mantengan a la vanguardia.
+                        </h5>
+                    </li>
+                    <br>
+                </ul>
+            </li>
+        </ol>
+
+        <h3> Gestión y Creación de Documentos (PowerPoint, Excel, Word, etc.)</h3>
+        <br>
+        <ol>
+            <h5>Además del soporte técnico, entendemos la importancia de la gestión y presentación de la información.
+                Por
+                eso, ofrecemos servicios especializados en el manejo de documentos, adaptados a las necesidades
+                específicas
+                de tu empresa o proyecto.</h5>
+            <br>
+            <li>
+                <ul>
+                    <h4>Creación de Presentaciones en PowerPoint</h4>
+                    <br>
+                    <br>
+                    <li>
+                        <h5><strong>Presentaciones Profesionales:</strong>
+                            <br>
+                            Diseñamos presentaciones atractivas y
+                            profesionales,
+                            con
+                            un enfoque en la comunicación visual efectiva. Utilizamos plantillas personalizadas,
+                            gráficos, y
+                            animaciones
+                            que garantizan una presentación de alto impacto.
+                        </h5>
+                    </li>
+                    <br><br>
+                    <li>
+                        <h5>
+                            <strong>Estructuración de Contenidos:</strong>
+                            <br>
+                            No solo nos encargamos del diseño visual, sino también de la estructura de los contenidos.
+                            Te
+                            ayudamos a
+                            organizar la información de manera clara y lógica para que tu mensaje sea potente y directo.
+                            Revisión y
+                            Optimización: Si ya tienes una presentación, revisamos y mejoramos el diseño, los gráficos,
+                            y el
+                            contenido
+                            para que sea más atractivo y efectivo.
+                        </h5>
+                    </li>
+
+                </ul>
+            </li>
+            <br>
+            <li>
+                <h4>Excel y Gestión de Datos </h4>
+                <br>
+
+                <ul>
+                    <li>
+                        <h5><strong>Creación de Hojas de Cálculo Personalizadas:</strong>
+                            <br>
+                            Diseñamos hojas de cálculo en Excel que se ajustan a las necesidades de tu negocio, desde
+                            presupuestos y
+                            facturación hasta análisis de datos complejos. Creamos fórmulas automatizadas y funciones
+                            avanzadas
+                            que
+                            simplifican el trabajo diario.
+                    </li>
+                    <br><br>
+                    <li>
+                        <h5><strong>Visualización de Datos:</strong>
+                            <br>
+                            Diseñamos gráficos y tablas dinámicas que facilitan la visualización de datos complejos.
+                            Podemos
+                            ayudarte a convertir tus datos en información útil que facilite la toma de decisiones.
+                        </h5>
+                    </li>
+                    <br>
+                    <li>
+                        <h5><strong>Automatización con Macros:</strong>
+                            <br>
+                            Creamos y programamos macros para automatizar tareas repetitivas, mejorando la eficiencia y
+                            reduciendo
+                            los errores en la manipulación de datos.
+                        </h5>
+                    </li>
+                </ul>
+            </li>
+            <br>
+
+            <li>
+
+                <h4>Word y Documentación de Negocios</h4>
+                <br>
+                <ul>
+                    <li>
+                        <h5><strong>Redacción y Formato de Documentos:</strong>
+                            <br>
+                            Nos encargamos de la creación y edición de documentos profesionales en Microsoft Word. Desde
+                            la
+                            redacción de informes hasta la creación de plantillas para tu empresa, aseguramos un formato
+                            coherente y
+                            profesional. Optimización de Documentos: Realizamos una revisión exhaustiva de tus
+                            documentos para
+                            mejorar su estructura, estilo, y formato, facilitando la lectura y presentación.
+                        </h5>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </div>

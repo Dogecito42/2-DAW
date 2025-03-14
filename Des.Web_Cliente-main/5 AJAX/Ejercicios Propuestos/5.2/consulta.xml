@@ -1,0 +1,56 @@
+<citas>
+    <cita numero="25_02_11_1">
+        <usuario>Madero</usuario>
+        <hora>10:55</hora>
+        <telefono>669587910</telefono>
+        <destinoCita>Consulta 69</destinoCita>
+        <nombre>Jorge Lopez Fernandez</nombre>
+        <fecha>11 de febrero de 2025</fecha>
+    </cita>
+    
+    <cita numero="25_02_11_2">
+        <usuario>Salinas</usuario>
+        <hora>11:30</hora>
+        <telefono>669587912</telefono>
+        <destinoCita>Consulta 32</destinoCita>
+        <nombre>Ana Maria Sanchez Ruiz</nombre>
+        <fecha>11 de febrero de 2025</fecha>
+    </cita>
+
+    <cita numero="25_02_11_3">
+        <usuario>Hidalgo</usuario>
+        <hora>12:15</hora>
+        <telefono>669587914</telefono>
+        <destinoCita>Consulta 45</destinoCita>
+        <nombre>Pedro Gonzalez Jimenez</nombre>
+        <fecha>11 de febrero de 2025</fecha>
+    </cita>
+
+    <cita numero="25_02_11_4">
+        <usuario>Juarez</usuario>
+        <hora>13:00</hora>
+        <telefono>669587918</telefono>
+        <destinoCita>Consulta 12</destinoCita>
+        <nombre>Maria Fernanda Perez Morales</nombre>
+        <fecha>11 de febrero de 2025</fecha>
+    </cita>
+
+    <cita numero="25_02_11_5">
+        <usuario>Zapata</usuario>
+        <hora>13:45</hora>
+        <telefono>669587919</telefono>
+        <destinoCita>Consulta 88</destinoCita>
+        <nombre>Carlos Alberto Ramirez Silva</nombre>
+        <fecha>11 de febrero de 2025</fecha>
+    </cita>
+
+    <cita numero="25_02_11_6">
+        <usuario>Iturbide</usuario>
+        <hora>14:30</hora>
+        <telefono>669587921</telefono>
+        <destinoCita>Consulta 21</destinoCita>
+        <nombre>Gabriela Martinez Torres</nombre>
+        <fecha>11 de febrero de 2025</fecha>
+    </cita>
+
+</citas>

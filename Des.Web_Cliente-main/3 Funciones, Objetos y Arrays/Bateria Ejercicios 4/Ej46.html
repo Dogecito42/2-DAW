@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="salida">
+    </div>
+
+    <script>
+        var papeletas=[];
+
+        for (var i=0; i<10; i++){
+            let num=parseInt((Math.random() * (1000-1)+1));
+            let num2=parseInt((Math.random() *(10-1)+1));
+            papeletas[num]=num2*1000;
+        }
+
+        var texto="";
+        
+        for (var i=0; i<papeletas.length; i++){
+            if (papeletas[i]>0){
+                texto+="Papeleta ganadora "+i+": "+papeletas[i]+"<br>";
+            }
+        }
+        document.getElementById("salida").innerHTML=texto;
+    </script>
+</body>
+</html>

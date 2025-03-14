@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="listado"></p>
+
+    <script>
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          recuperaDatos(this);
+        }
+      };
+
+      xhttp.open("GET", "consulta.xml", true);
+      xhttp.send();
+
+      function recuperaDatos(xml) {
+        var datos = "";
+        var xmlDatos = xml.responseXML;
+
+        var citas = xmlDatos.getElementsByTagName("cita");
+        
+        for (var i = 0; i < citas.length; i++) {
+          var numero = "Cita : " + citas[i].getAttribute("numero") + "<br>";
+
+          var usuario = "Usuario : " +citas[i].getElementsByTagName("usuario")[0].textContent + "<br>";
+          var hora = "Hora : " + citas[i].getElementsByTagName("hora")[0].textContent + "<br>";
+          var telefono = "Teléfono : " +citas[i].getElementsByTagName("telefono")[0].textContent + "<br>";
+          var destinoCita = "Destino de la Cita : " + citas[i].getElementsByTagName("destinoCita")[0].textContent + "<br>";
+          var nombre = "Nombre : " + citas[i].getElementsByTagName("nombre")[0].textContent + "<br>";
+          var fecha = "Fecha : " + citas[i].getElementsByTagName("fecha")[0].textContent + "<br>";
+
+          document.getElementById("listado").innerHTML += numero + usuario + hora +telefono + destinoCita + nombre + fecha + "<br>";
+        }
+
+        
+      }
+    </script>
+  </body>
+</html>

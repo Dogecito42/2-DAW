@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnDatos").click(function(){
+                $("#lista").load("datos.html");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h3>Fases de Madero</h3>
+    <ul id="lista"></ul>
+    <button id="btnDatos">Carga de Maderos</button>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Nombre: </label>
+    <input type="text" id="nombre" placeholder="Introduzca su usuario">
+    <br>
+    <label>Contraseña: </label>
+    <input type="text" id="contra"  placeholder="Introduzca su contraseña">
+    <br>
+    
+    <button onclick="iniciarSesion()">Iniciar sesión</button>
+    <br>
+    <label id="nContraL">Nueva contraseña</label>
+    <input type="text" id="nContra"  placeholder="Introduzca la contraseña">
+    <div id="salida"></div>
+    <br>
+    <button onclick="cambiarContra()" id="nContraB">Cambiar Contraseña</button>
+</body>
+
+<style>
+    body{
+        background-color: lightgreen;
+    }
+    #nContraL{
+        visibility: hidden;
+    }
+    #nContra{
+        visibility: hidden;
+    }
+    #nContraB{
+        visibility: hidden;
+    }
+</style>
+
+<script src="GabrielCallejon_Ventana1.js"></script>
+</html>

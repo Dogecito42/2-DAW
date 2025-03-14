@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var a=prompt("Indica el primer número para dividirlo");
+        var b=prompt("Indica el segundo número");
+        a=parseInt(a);
+        b=parseInt(b);
+        alert(a/b);
+
+        var a=prompt("Ahora, introduzca una cadena de texto para dividirla");
+        var b=prompt("Indica la segunda cadena de texto");
+        alert(a/b); //Devuelve NaN, Not a Number
+
+        a=prompt("Ahora, introduce un numero para dividrilo entre 0");
+        a=parseInt(a);
+        alert(a/0); //Devuelve Infinity, es decir, infinito
+    </script>
+</body>
+</html>

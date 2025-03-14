@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*13. Escribe un programa que nos vaya pidiendo números. Si escribimos el número
+9999 se acaba; por último el programa nos da como resultado el número de
+números introducidos, exceptuando el 9999.Graba el programa con el nombre
+2dawM.htm en TuCarpeta.*/
+
+        var suma=0;
+        var num;
+        do{
+            num=prompt("Escribe números para devolver la suma. El programa acaba al escrbir 9999");
+            
+            if (parseInt(num)!==9999){
+                suma++;
+            }
+
+        }while(parseInt(num)!==9999);
+
+        alert("Numeros introducidos: "+suma);
+        
+    </script>
+</body>
+</html>

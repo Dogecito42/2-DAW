@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="salida"></div>
+    <script>
+        var vector=[];
+
+        for (var i=0; i<10;i++){
+            let num=(Math.random() * (1000 -1)+ 1);
+            vector.push(Math.floor(num));
+        }
+        var result=vector[vector.length-1]+vector[vector.length-2];
+        var texto="Suma de los dos últimos números: "+result+"<br>";
+        result=0;
+        for (var i=0; i<vector.length; i++){
+            result+=vector[i];
+        }
+
+        texto+="Suma de todo el vector: "+result;
+
+        document.getElementById("salida").innerHTML=texto
+    </script>
+</body>
+</html>

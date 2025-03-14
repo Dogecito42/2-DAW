@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="#" onclick="madero()">Click</a>
+    <script>
+
+        function madero() {
+
+            var num;
+            num = Math.random() * 3; //se guarda en num un valor comprendido entre 0.00001 y 2.99999
+            num = parseInt(num); //guardamos solo la parte entera de la variable num
+
+            if (num == 0) {
+               return window.location = 'http://www.hotmail.com';
+            }
+            if (num == 1) {
+                return window.location = 'https://workspace.google.com/intl/es/gmail/';
+            }
+            if (num == 2) {
+                return window.location = 'https://espanol.yahoo.com/';
+            }
+        }
+    </script>
+</body>
+
+</html>

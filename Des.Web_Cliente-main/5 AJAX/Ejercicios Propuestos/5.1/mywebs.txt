@@ -1,0 +1,18 @@
+[
+  {
+    "display": "Madero",
+    "url": "https://es.dreamstime.com/imagen-de-archivo-ardilla-gorda-image28396691"
+  },
+  {
+    "display": "Elefante",
+    "url": "https://www.reddit.com/r/memes/comments/sn6zt6/look_at_this_fat_giraffe_every_time_i_do_it_makes/?tl=es-es&rdt=49640"
+  },
+  {
+    "display": "Serpiente",
+    "url": "https://es.wikipedia.org/wiki/Serpentes"
+  },
+  {
+    "display": "Usero",
+    "url": "https://es.wikipedia.org/wiki/Papio"
+  }
+]

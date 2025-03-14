@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Crónometro</h1>
+
+    <div id="contenido"> <!--Botones que muestran cada parte del ejercicio-->
+        <button id="bt1" class="btn btn-outline-light btn-lg" onclick="pararCronometro()">Parar</button>
+        <button id="bt2" class="btn btn-outline-light btn-lg" onclick="continuarCronometro()">Continuar</button>
+        <button id="bt3" class="btn btn-outline-light btn-lg" onclick="setTime()">Poner Tiempo</button>
+    </div>
+    <div id="ventana">
+        <div id="reloj"></div>
+    </div>
+
+    <style>
+        body {
+            background-color: #000;
+        }
+
+        h1 {
+            text-align: center;
+            color: aliceblue;
+        }
+
+        #contenido {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #reloj {
+            color: #fff;
+            font-size: 3em;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+
+    <script>
+        var minutos;
+        var segundos;
+        var intervalo;
+        var cronometroParado = true;
+
+        function setTime() {
+            minutos = parseInt(prompt("Indique cuantos minutos va a contar el cronómetro"), 10) || 0;
+            segundos = parseInt(prompt("Indique cuantos segundos va a contar el cronómetro"), 10) || 0;
+            actualizarReloj();
+            iniciarCronometro();
+        }
+
+        function iniciarCronometro() {
+            if (!cronometroParado) return; // Evita iniciar múltiples veces
+            cronometroParado = false;
+            intervalo = setInterval(cuentaAtras, 1000);
+        }
+
+        function cuentaAtras() {
+            if (cronometroParado) return;
+
+            if (minutos === 0 && segundos === 0) {
+                alert("Se agotó su tiempo");
+                pararCronometro();
+                return;
+            }
+
+            if (segundos === 0) {
+                minutos--;
+                segundos = 59;
+            } else {
+                segundos--;
+            }
+
+            actualizarReloj();
+        }
+
+        function actualizarReloj() {
+            const ceromin = minutos < 10 ? '0' : '';
+            const ceroseg = segundos < 10 ? '0' : '';
+            document.getElementById("reloj").innerHTML = `${ceromin}${minutos}:${ceroseg}${segundos}`;
+        }
+
+        function pararCronometro() {
+            cronometroParado = true;
+            clearInterval(intervalo);
+        }
+
+        function continuarCronometro() {
+            if (cronometroParado && (minutos > 0 || segundos > 0)) {
+                cronometroParado = false;
+                intervalo = setInterval(cuentaAtras, 1000);
+            }
+        }
+    </script>
+
+</body>
+</html>

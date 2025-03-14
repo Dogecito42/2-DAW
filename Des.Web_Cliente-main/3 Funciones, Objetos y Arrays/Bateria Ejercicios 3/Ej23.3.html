@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var string=prompt("Indica un texto y luego una clave");
+        var clave=prompt("Ingrese la clave");
+        var num=0;
+        if (string.includes(clave)){
+            
+            num=string.indexOf(clave)+1;
+            alert("La clave se encuentra en el carácter: "+num);
+        }else{
+            alert("No se encuentra la clave");
+        }
+    </script>
+</body>
+</html>

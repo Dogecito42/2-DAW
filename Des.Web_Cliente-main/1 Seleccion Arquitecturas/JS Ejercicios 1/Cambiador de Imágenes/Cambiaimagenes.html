@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>Cambio de imagenes con html</h1>
+        <img id="img" onclick="cambiaPic()" src="cholo.jpg" height="256px" width="256px">
+        <p>Click para cambiar</p>
+
+        <script>
+            function cambiaPic(){
+     var image=document.getElementById('img');
+     if (image.src.match("consejo")){
+         image.src="cholo.jpg";
+     }else{
+         if(image.src.match("viejo")){
+             image.src="consejo.jpg";
+         }else{
+            if (image.src.match("cholo")){
+                image.src="rezo.jpg";
+            }else{
+                image.src="viejo.png";
+            }
+
+         }
+        }
+    }     
+           
+        </script>
+    </body>
+</html>

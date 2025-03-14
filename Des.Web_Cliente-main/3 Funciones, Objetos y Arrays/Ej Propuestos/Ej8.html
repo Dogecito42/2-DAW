@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var perrillos = ["Rocket", "Flash", "Bella", "SNigger"];
+        console.log(perrillos.toString());
+        var ciudadades =" Manchester, London, Liverpool, Birmingham, Leeds, Carlisle";
+        let perrillos2 =ciudadades.split(",");
+
+        for (let i=0; i<perrillos2.length; i++){
+            perrillos.push(perrillos2[i]);
+        }
+        console.log(perrillos.toString());
+
+        for (let i=0; i<perrillos.length; i++){
+            if (perrillos[i].includes("C") || perrillos[i].includes("c")){
+                perrillos.splice(i, 1);
+            }
+        }
+        console.log(perrillos.toString());
+
+        perrillos.unshift("Estepona");
+        console.log(perrillos);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="salida"></div>
+    <script>
+
+        var fecha = new Date();
+        var mes = fecha.getMonth() + 1;
+
+        var cuatrimestre;
+
+        if (mes >= 1 && mes <= 4) {
+            cuatrimestre = "primer cuatrimestre (enero - abril)";
+        } else if (mes >= 5 && mes <= 8) {
+            cuatrimestre = "segundo cuatrimestre (mayo - agosto)";
+        } else if (mes >= 9 && mes <= 12) {
+            cuatrimestre = "tercer cuatrimestre (septiembre - diciembre)";
+        }
+
+        document.getElementById("salida").innerHTML=cuatrimestre;
+    </script>
+</body>
+
+</html>

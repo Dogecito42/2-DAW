@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="salida">
+    </div>
+    <div id="salida2">
+    </div>
+    <div id="salida3">
+    </div>
+    <script>
+        var vector=[];
+        var vector2=[];
+        var vector3=[];
+       
+        for (let i=0; i<10; i++){
+
+            let num=(Math.random() * (500 - 1) + 1);
+            
+            if (num<250){
+                vector2.push(num.toFixed(0));
+            }else{
+                vector3.push(num.toFixed(0));
+            }
+            vector.push(num.toFixed(0));
+
+        }
+
+
+           document.getElementById("salida").innerHTML="Longitud Vector 1: "+vector.length+"<br>Vector 1: "+vector.toString()+"<br>";
+        document.getElementById("salida2").innerHTML="Longitud Vector 2: "+vector2.length+"<br>Vector 2 :"+vector2.toString()+"<br>";
+        document.getElementById("salida3").innerHTML="Longitud Vector 3: "+vector3.length+"<br>Vector 3 :"+vector3.toString()+"<br>";
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var string=prompt("Escribe una palabra palíndroma");
+        var string2=string.split("");
+        var palin;
+
+        palin=string2.reverse().join("");
+
+        if (palin===string){
+            alert("Es palíndromo");
+        }else{
+            alert("No es palíndromo");
+        }
+        
+    </script>
+</body>
+</html>

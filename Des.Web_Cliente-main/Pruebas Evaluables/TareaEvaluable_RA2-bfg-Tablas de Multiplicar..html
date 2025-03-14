@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Este código implementa Bootstrap, pero es completamente funcional sin la libreria-->
+    <title>Tablas</title>
+</head>
+
+<body>
+    <br>
+    <h1>Tablas de multiplicar</h1>
+    <br>
+    <div id="contenido"> <!--Botones que muestran cada parte del ejercicio-->
+        <button id="bt1" class="btn btn-outline-light btn-lg" onclick="mostrarTabla()">Tablas</button>
+        <button id="bt2" class="btn btn-outline-light btn-lg" onclick="cambioBit()">Cambio Bit</button>
+    </div>
+    <div id="Tablas"> <!--El contenedor que aloja las tablas y cada tabla que se muestra-->
+        <table class="cont" id="tabla1"></table>
+        <table class="cont" id="tabla2"></table>
+        <table class="cont" id="tabla3"></table>
+        <table class="cont" id="tabla4"></table>
+    </div>
+
+
+    <style>
+        body {
+            background-color: #000;
+        }
+
+        h1 {
+            text-align: center;
+            color: aliceblue;
+        }
+
+        #contenido {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #Tablas {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding-top: 20px;
+        }
+
+        .tabla-container {
+            display: inline-block;
+        }
+
+        table {
+            border: 1px solid aliceblue;
+            color: aliceblue;
+            font-size: 24px;
+            text-align: center;
+            margin: 0 15px;
+        }
+
+        th,
+        td {
+            border: 1px solid aliceblue;
+            padding: 8px;
+        }
+    </style>
+
+    <script>
+        function mostrarTabla() {
+            let tabla1 = document.getElementById("tabla1");
+            let tabla2 = document.getElementById("tabla2");
+            let tabla3 = document.getElementById("tabla3");
+            let boton = document.getElementById("bt1");
+            let num1 = 7, num2 = 8, num3 = 9, i = 0;
+            let inner1 = "<tr><th colspan='2'>Tabla del 7</th></tr>", inner2 = "<tr><th colspan='2'>Tabla del 8</th></tr>", inner3 = "<tr><th colspan='2'>Tabla del 9</th></tr>";
+
+            //Las declaraciones corresponden a la obtención de las tablas que modificamos, el botón que hemos accionado, los numeros que se operan y el contenido de las tablas,
+            //inicializadas con las filas table-header
+
+            for (let i = 0; i <= 10; i++) {
+                inner1 = inner1 + ("<tr><td>" + num1 + " x " + i + "</td><td>" + num1 * i + "</td></tr>");
+            }
+            tabla1.innerHTML = inner1;
+
+            //tabla con bucle for y código plasmado en el html
+
+            do {
+                let val2 = num2 + i;
+                inner2 = inner2 + ("<tr><td>" + num2 + " + " + i + "</td><td>" + val2 + "</td></tr>");
+                i++;
+            } while (i <= 10);
+            tabla2.innerHTML = inner2;
+
+            //tabla con bucle do-while y código plasmado en el html
+
+            i = 0; //para restablecer el valor del contador
+
+            while (i <= 10) {
+                let val3 = num3 / i;
+                if (i === 0) {
+                    inner3 = inner3 + ("<tr><td>" + num3 + " / " + i + "</td><td>Infinito</td></tr>");
+                } else {
+                    inner3 = inner3 + ("<tr><td>" + num3 + " / " + i + "</td><td>" + val3.toFixed(2) + "</td></tr>");
+                }
+                i++;
+            }
+            tabla3.innerHTML = inner3;
+
+            //tabla con bucle while y código plasmado en el html
+
+            bt1.style.display = 'none'; //Desaparecemos de la vista del usuario el botón para limpieza de la página
+
+        }
+
+        function cambioBit() {
+
+            let tabla4 = document.getElementById("tabla4");
+            let inner4 = "<tr><th colspan='2'>Cambios de bit</th></tr>";
+            let bt2 = document.getElementById("bt2");
+
+            //Las variables corresponden a la tabla que modificamos, el table header de la tabla y el botón
+            inner4 = inner4 + "<tr><td>" + 125 + " / " + 8 + "</td><td>" + (125 >> 3) + "</td></tr>";
+            inner4 = inner4 + "<tr><td>" + 40 + " x " + 4 + "</td><td>" + (40 << 2) + "</td></tr>";
+            inner4 = inner4 + "<tr><td>" + 25 + " / " + 2 + "</td><td>" + (25 >> 1) + "</td></tr>";
+            inner4 = inner4 + "<tr><td>" + 10 + " x " + 16 + "</td><td>" + (10 << 4) + "</td></tr>";
+
+            tabla4.innerHTML = inner4;
+
+            //con la instrucción (num <<||>> num2) podemos multiplicar o dividir entre 2^num2. Esto ocurre porque
+            //num1 (en binario) se desplaza a la izquiera o derecha num2 posiciones, conocido como desplazamiento de bit (shift)
+            //Terminamos añadiendo el contenido a la  tabla
+
+            bt2.style.display = 'none'; //Desaparecemos de la vista del usuario el botón para limpieza de la página
+        }
+    </script>
+</body>
+
+</html>

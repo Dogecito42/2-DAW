@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            var string=prompt("Ingrese un texto para devolverlo en palabras sueltas");
+            var array=string.split(" ");
+            var result="";
+            array.forEach(palabra =>result=result+palabra.toString()+"\n");
+
+            alert(result);
+        </script>
+</body>
+</html>
